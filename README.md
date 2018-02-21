@@ -1,5 +1,5 @@
 # GL-Console
-It controls some OpenGL functions with console inputs.
+GL-console pipes console inputs to OpenGL graphic function. It was made to evaluate the V-Sync precision of OpenGL, and it was proved perfect with GLFW. 
 
 ## Needed
 - libglfw libglfw-dev
@@ -16,14 +16,14 @@ or
 
 ## Command
 - Format
--- command1 args... ; command1 aggs...   //";" means overlay due to following commmand
+ - command1 args... ; command1 aggs...   //";" overlays the drawn screen by following commmand
 - Draw background command
--- B "region_ratio_to_paint" "gray_level"
+ - B "region_ratio_to_paint" "gray_level"
 - Draw circle command
--- C "center coordinate X"  "center coordinate Y" "gray_level"
+ - C "center coordinate X"  "center coordinate Y" "gray_level"
 - Draw sinusoidal stripes command
--- W "wave_length" "phase" "gray_level_center" "gray_level_180deg"
+ - W "wave_length" "phase" "gray_level_center" "gray_level_180deg"ate 
 - Load 3D model data (only .obj available now)
--- L *.obj
+ - L *.obj
 - Render preloaded 3D model with rotation
--- R rotX rotY rotZ
+ - R rotX rotY rotZ
